@@ -20,7 +20,7 @@ const Dashboard = () => {
 
   const fetchUserProfile = async (token) => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/profile", {
+      const response = await fetch("https://assignment-z3c4.onrender.com/api/auth/profile", {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
