@@ -50,7 +50,7 @@ const Donation = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/donate/", {
+      const response = await fetch("https://assignment-z3c4.onrender.com/api/donate/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(donationData),
