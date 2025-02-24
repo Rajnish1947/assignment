@@ -12,7 +12,7 @@ const Transaction = () => {
   useEffect(() => {
     const fetchDonors = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/donate/donors");
+        const response = await fetch("https://assignment-z3c4.onrender.com/api/donate/donors");
         const data = await response.json();
         setDonors(data);
       } catch (error) {
